@@ -15,8 +15,8 @@ const getTodo = async (todoId: number) => {
 
     return {
       owner: responseUser.data.name,
-      completed: todo.completed,
       title: todo.title,
+      completed: todo.completed,
 
     };
     
