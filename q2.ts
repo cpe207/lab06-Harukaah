@@ -22,7 +22,7 @@ const getTodo = async (todoId: number) => {
     
   } 
   catch (error) {
-  return "INVALID USER ID";
+  return "INVALID TODO ID";
 }
 };
 
