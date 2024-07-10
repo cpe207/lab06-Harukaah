@@ -8,7 +8,8 @@ const getTodo = async (todoId: number) => {
       `https://jsonplaceholder.typicode.com/todos/${todoId}`
     );
     const todo = responseToDo.data;
-    const userId = todo.userid;
+    const userId = todo.userId;
+
     const responseUser = await axios.get(
       `https://jsonplaceholder.typicode.com/users/${userId}`
     );
